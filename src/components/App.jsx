@@ -10,7 +10,7 @@ export const App = () => {
         color: '#010101',
       }}
     >
-      Vyachik homework template
+      Vyachuk homework template
     </div>
   );
 };
