@@ -1,16 +1,14 @@
+import { Profile } from './Profile/Profile';
+import userData from 'data/user.json';
+
+import './App.css';
+import { Statistics } from './Statistics/Statistics';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-      }}
-    >
-      Vyachuk homework template
+    <div className="wrapper">
+      <Profile {...userData} />
+      <Statistics />
     </div>
   );
 };

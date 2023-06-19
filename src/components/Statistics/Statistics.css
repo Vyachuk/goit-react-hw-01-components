@@ -1,0 +1,13 @@
+.statistics {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 400px;
+  min-height: 100px;
+  background-color: white;
+}
+.stat-list {
+  display: flex;
+}
