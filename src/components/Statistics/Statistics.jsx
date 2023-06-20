@@ -1,12 +1,12 @@
 import React from 'react';
-import statsData from 'data/data.json';
 import { StatisticsItem } from 'components/StatisticsItem/StatisticsItem';
 import './Statistics.css';
+import PropTypes from 'prop-types';
 
-export const Statistics = () => {
+export const Statistics = ({ statsData }) => {
   return (
     <section className="statistics">
-      <h2 className="title">Upload stats</h2>
+      {statsData && <h2 className="title">Upload stats</h2>}
 
       <ul className="stat-list">
         {statsData.map(type => (
@@ -15,4 +15,14 @@ export const Statistics = () => {
       </ul>
     </section>
   );
+};
+
+Statistics.propTypes = {
+  statsData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string,
+      label: PropTypes.string,
+      percentage: PropTypes.number,
+    })
+  ),
 };
