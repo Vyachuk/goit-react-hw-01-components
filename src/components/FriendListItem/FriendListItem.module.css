@@ -1,4 +1,4 @@
-.friend-item {
+.friendItem {
   min-height: 100px;
   box-shadow: rgb(0, 0, 0) 0px 3px 8px;
   border-radius: 10px;
@@ -8,11 +8,11 @@
   gap: 20px;
   align-items: center;
 }
-.friend-status {
+.friendStatus {
   width: 20px;
   height: 20px;
   border-radius: 50%;
 }
-.friend-avatar {
+.friendAvatar {
   max-width: 100px;
 }

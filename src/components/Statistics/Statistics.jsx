@@ -1,14 +1,14 @@
 import React from 'react';
 import { StatisticsItem } from 'components/StatisticsItem/StatisticsItem';
-import './Statistics.css';
+import style from './Statistics.module.css';
 import PropTypes from 'prop-types';
 
 export const Statistics = ({ statsData }) => {
   return (
-    <section className="statistics">
-      {statsData && <h2 className="title">Upload stats</h2>}
+    <section className={style.statistics}>
+      {statsData && <h2 className={style.title}>Upload stats</h2>}
 
-      <ul className="stat-list">
+      <ul className={style.statList}>
         {statsData.map(type => (
           <StatisticsItem key={type.id} {...type} />
         ))}

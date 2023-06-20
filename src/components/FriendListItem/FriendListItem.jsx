@@ -1,20 +1,20 @@
 import React from 'react';
-import './FriendListItem.css';
+import style from './FriendListItem.module.css';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <li className="friend-item">
+    <li className={style.friendItem}>
       <span
-        className="friend-status"
+        className={style.friendStatus}
         style={{ backgroundColor: `${isOnline ? 'green' : 'red'}` }}
       ></span>
       <img
-        className="friend-avatar"
+        className={style.friendAvatar}
         src={avatar}
         alt="User avatar"
         width="48"
       />
-      <p className="friend-name">{name}</p>
+      <p className={style.friendName}>{name}</p>
     </li>
   );
 };
